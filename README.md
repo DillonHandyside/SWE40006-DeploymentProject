@@ -49,11 +49,27 @@ This repository is linked to our AWS CI/CD pipeline. Once code is tested and pus
 
 
 #### AWS Services
+<p>
+  Elastic Beanstalk creates the EC2/CloudWatch instances for our application:
+</p>
+
 ![Elastic Beanstalk][elasticbeanstalk]
 ![EC2][ec2]
-![S3][s3]
 ![CloudWatch][cloudwatch]
+
+<p>
+  S3 holds our application artefacts:
+</p>
+
+![S3][s3]
+
+<p>
+  And finally, CodePipeline, CodeBuild and CodeDeploy handles our CI/CD pipeline functionality:
+</p>
+
 ![CodePipeline][codepipeline]
+![CodeDeploy][codedeploy]
+![CodeBuild][codebuild]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,8 +124,10 @@ Provide instructions on how to do a pull request.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [aws]: https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white
 [ec2]: https://img.shields.io/badge/EC2-232F3E?style=for-the-badge&logo=amazonec2&logoColor=white
-[cloudwatch]: https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white
+[cloudwatch]: https://img.shields.io/badge/CloudWatch-232F3E?style=for-the-badge&logo=amazoncloudwatch&logoColor=white
 [s3]: https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white
 [codepipeline]: https://img.shields.io/badge/CodePipeline-0049AB?style=for-the-badge&logo=amazon-aws&logoColor=white
+[codedeploy]: https://img.shields.io/badge/CodeDeploy-0049AB?style=for-the-badge&logo=amazon-aws&logoColor=white
+[codebuild]: https://img.shields.io/badge/CodeBuild-0049AB?style=for-the-badge&logo=amazon-aws&logoColor=white
 [elasticbeanstalk]: https://img.shields.io/badge/Elastic_Beanstalk-66459B?style=for-the-badge&logo=amazon-aws&logoColor=white
 [github]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
