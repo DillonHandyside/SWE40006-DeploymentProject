@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm test # Replace with your actual test script
+
+artifacts:
+  files:
+    - '**/*'
