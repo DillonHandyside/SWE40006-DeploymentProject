@@ -5,7 +5,6 @@ phases:
     commands:
       - npm install
       - npm install express --save
-      - node app.js # Replace with your actual build script if needed
 
 artifacts:
   files:
