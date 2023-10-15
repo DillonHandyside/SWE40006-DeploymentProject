@@ -1,4 +1,16 @@
-const add = (a, b) => a + b;
-const subtract = (a, b) => a - b;
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
-module.exports = { add, subtract };
+// Define routes
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.get('/about', (req, res) => {
+  res.send('About Us');
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
