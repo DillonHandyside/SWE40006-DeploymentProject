@@ -4,9 +4,10 @@ phases:
   pre_build:
     commands:
       - npm install
+      - npm install --save-dev mocha
   build:
     commands:
-      - npm test # Replace with your actual test script
+      - npm test
 
 artifacts:
   files:

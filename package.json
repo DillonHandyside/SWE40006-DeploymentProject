@@ -4,14 +4,17 @@
   "description": "<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->\r <a name=\"readme-top\"></a>\r <!-- PROJECT LOGO -->\r <div align=\"center\">\r   <h3 align=\"center\">SWE40006 Deployment Project</h3>",
   "main": "app.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
   }
 }
