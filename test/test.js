@@ -1,6 +1,6 @@
 process.env.PORT = 3001;
 const assert = require('assert');
-const { getGreetingMessage, server } = require('../app');
+const { getGreetingMessage } = require('../app');
 
 describe('getGreetingMessage function', () => {
   it('should return a greeting message with the provided name', () => {
@@ -13,9 +13,5 @@ describe('getGreetingMessage function', () => {
     const name = '';
     const message = getGreetingMessage(name);
     assert.strictEqual(message, 'Hello, !'); // Update this with your expected default message
-  });
-
-  after(() => {
-    server.close();
   });
 });

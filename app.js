@@ -22,16 +22,11 @@ app.get('/greet/:name', (req, res) => {
   res.send(message);
 });
 
-const server = app.listen(port, () => {
+// Only start the server if this script is run directly, not when required as a module
+if (require.main === module) {
+  app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-});
-  
-module.exports = { getGreetingMessage, server };
+  });
+}
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
-  
-module.exports = { getGreetingMessage };
-
-
+module.exports = { getGreetingMessage, app };
