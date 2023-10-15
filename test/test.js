@@ -1,3 +1,4 @@
+process.env.PORT = 3001;
 const assert = require('assert');
 const { getGreetingMessage, server } = require('../app');
 
