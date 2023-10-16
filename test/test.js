@@ -4,7 +4,7 @@ const { getGreetingMessage } = require('../app');
 
 describe('getGreetingMessage function', () => {
   it('should return a greeting message with the provided name', () => {
-    const name = 'SWE40006';
+    const name = 'John';
     const message = getGreetingMessage(name);
     assert.strictEqual(message, 'Hello, John!');
   });
